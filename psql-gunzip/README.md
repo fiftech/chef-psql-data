@@ -18,7 +18,7 @@ How I built it was:
 ```shell
 $ make
 $ sudo cp func.so `pg_config --pkglibdir`
-$ sudo su - the-name-of-the-db-user -c "psql the-name-of-the-db"
+$ sudo su - opscode-pgsql -c "psql opscode_chef"
 > CREATE FUNCTION gunzip(bytea) RETURNS text
   AS 'func', 'gunzip'
   LANGUAGE C STRICT;
